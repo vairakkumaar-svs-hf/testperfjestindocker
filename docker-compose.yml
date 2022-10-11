@@ -1,0 +1,21 @@
+version: '3'
+services:
+  test:
+    image: node:16.17.0
+    volumes:
+      - "./app:/app"
+    working_dir: /app
+    command: ["npm", "test"]
+
+  npminstall:
+    image: node:16.17.0
+    volumes:
+      - "./app:/app"
+    working_dir: /app
+    command: ["npm", "install"]
+
+  shellenv:
+    image: node:16.17.0
+    volumes:
+      - "./app:/app"
+    working_dir: /app

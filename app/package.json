@@ -1,0 +1,16 @@
+{
+  "name": "testperfjestindocker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.1.2",
+    "jest-junit": "^14.0.1"
+  }
+}
