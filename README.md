@@ -33,6 +33,7 @@ npm notice
 ```
 
 # output from native cli
+It took 0.808 s
 
 ```
  jest
@@ -50,4 +51,36 @@ Tests:       1 passed, 1 total
 Snapshots:   0 total
 Time:        0.808 s
 Ran all test suites.
+```
+
+
+# Run app in docker
+
+Ran in milliseconds
+
+```
+ docker-compose run app
+Creating testperfjestindocker_app_run ... done
+
+> testperfjestindocker@1.0.0 start
+> node .
+
+1665506815044
+3
+1665506815057
+```
+
+# Run app in native cli
+
+Ran in milliseconds
+
+```
+npm start
+
+> testperfjestindocker@1.0.0 start
+> node .
+
+1665506773162
+3
+1665506773168
 ```
